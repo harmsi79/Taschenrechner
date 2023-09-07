@@ -8,34 +8,37 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div>
-      <div id="ausgabe"></div>
-      <table>
-        <tr>
-          <td onclick="insert(7)">7</td>
-          <td onclick="insert(8)">8</td>
-          <td onclick="insert(9)">9</td>
-          <td onclick="insert('/')">/</td>
-        </tr>
-        <tr>
-          <td onclick="insert(4)">4</td>
-          <td onclick="insert(5)">5</td>
-          <td onclick="insert(6)">6</td>
-          <td onclick="insert('*')">*</td>
-        </tr>
-        <tr>
-          <td onclick="insert(1)">1</td>
-          <td onclick="insert(2)">2</td>
-          <td onclick="insert(3)">3</td>
-          <td onclick="insert('-')">-</td>
-        </tr>
-        <tr>
-          <td onclick="ce()">CE</td>
-          <td onclick="insert(0)">0</td>
-          <td onclick="calculate()" id="enter">=</td>
-          <td onclick="insert('+')">+</td>
-        </tr>
-      </table>
+    <div class="wrapper">
+      <div class="calculater">
+        <div id="ausgabe"></div>
+        <table>
+          <tr>
+            <td onclick="insert(7)">7</td>
+            <td onclick="insert(8)">8</td>
+            <td onclick="insert(9)">9</td>
+            <td onclick="insert('/')">/</td>
+          </tr>
+          <tr>
+            <td onclick="insert(4)">4</td>
+            <td onclick="insert(5)">5</td>
+            <td onclick="insert(6)">6</td>
+            <td onclick="insert('*')">*</td>
+          </tr>
+          <tr>
+            <td onclick="insert(1)">1</td>
+            <td onclick="insert(2)">2</td>
+            <td onclick="insert(3)">3</td>
+            <td onclick="insert('-')">-</td>
+          </tr>
+          <tr>
+            <td onclick="ce()">CE</td>
+            <td onclick="insert(0)">0</td>
+            <td onclick="calculate()" id="enter">=</td>
+            <td onclick="insert('+')">+</td>
+          </tr>
+        </table>
+      </div>
+      <div id="list">1s</div>
     </div>
   </body>
 </html>
