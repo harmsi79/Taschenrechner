@@ -4,18 +4,22 @@ function insert(operation) {
 
 function calculate() {
   let container = document.getElementById("ausgabe");
-  let result = eval(container.innerHTML);
+  let contentInput = container.innerHTML;
+  let result = eval(contentInput);
   container.innerHTML = result;
-  updateListe(container);
-  console.log(result);
-  console.log(container);
-}
+  updateListe(contentInput, result);
+  }
 
 function ce() {
   let container = document.getElementById("ausgabe");
   container.innerHTML = "";
 }
 
-function updateListe(container) {
-  list.innerHTML = container;
+function updateListe(container, result) {
+  let listItem = container + " = " + result + "<br>"
+  let list = document.getElementById("list");
+  list.innerHTML = listItem + list.innerHTML;
 }
+
+
+
